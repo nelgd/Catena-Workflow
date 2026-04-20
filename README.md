@@ -6,12 +6,21 @@ These agents are designed to help with the boring stuff, the repetitive stuff, a
 
 ## Current Skills
 
-| SKILL | Description |
-| ----------- | ----------- |
-| plan-issue | Turns rough ideas into structured, actionable issues. |
-| pr-description | Generates clean, readable pull request descriptions. |
-| update-docs | Helps keep documentation in sync with code and changes. |
+### Project Skills (`.cursor/skills/`)
 
+| Skill | Description |
+| ----------- | ----------- |
+| plan-issue | Plans the implementation for a GitHub issue by fetching details, exploring the codebase, and producing a step-by-step implementation plan. |
+| pr-description | Generates a PR description from the current branch's code changes using a standardized template. |
+| update-docs | Updates markdown documentation to reflect code changes on the current git branch. |
+| draw-graph | Generates a Mermaid diagram showing classes changed on the current git branch and their immediate dependencies. |
+
+### Personal Skills (`~/.cursor/skills/`)
+
+| Skill | Description |
+| ----------- | ----------- |
+| drawgraph | Generates a Mermaid diagram of branch changes (personal copy, available across all projects). |
+| update-docs | Updates markdown documentation to reflect code changes (personal copy, available across all projects). |
 
 ## Structure
 
@@ -20,4 +29,5 @@ These agents are designed to help with the boring stuff, the repetitive stuff, a
 ├── plan-issue
 ├── pr-description
 ├── update-docs
+├── draw-graph
 └── ...
